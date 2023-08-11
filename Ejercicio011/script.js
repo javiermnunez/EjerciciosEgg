@@ -1,14 +1,12 @@
 function tomarEntrada(){
-    let entrada = document.getElementById("entrada");
-    console.log(entrada.value);//aca poner la funcion que toma la frase.
-    traeLargo(entrada.value);
-    console.log((entrada.value).lenght);
-}
-function traeLargo(frase){
-    const arrayFrase = new Array();
-    let largo = "";
-    console.log(frase.lenght);
-    for(let i=0;i<frase.lenght;i++){
-        pass;
+    let arrayPalabras = new Array();
+    var entrada = document.getElementById("entrada").value;
+    arrayPalabras = entrada.split(" ");
+     let mayor = "";
+    for(i = 0; i<arrayPalabras.length;i++){
+        if(arrayPalabras[i].length > mayor.length){
+            mayor = arrayPalabras[i];
+        }
     }
+    document.getElementById("salida").value = mayor;
 }
