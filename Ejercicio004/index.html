@@ -1,0 +1,20 @@
+<!-- Realiza un programa que sólo permita introducir los caracteres ‘S’ y ‘N’. Si el usuario
+ingresa alguno de esos dos caracteres se deberá de imprimir un mensaje por pantalla
+que diga “CORRECTO”, en caso contrario, se deberá imprimir “INCORRECTO”. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej4</title>
+</head>
+<body>
+    <h1>Introdusca S o N unicamente.</h1>
+    <input type="text" maxlength="1" id="entrada">
+      <button type="button" onclick="mostrarRespuesta()">Enviar</button>
+      <button type="button" onclick="resetear()">Reiniciar</button>
+    <h3 id="resultado"> </h3>
+    <script src="script.js"></script>
+</body>
+</html>
